@@ -1,0 +1,25 @@
+extends layout
+
+block content
+    .container(style="margin-top: 40px;margin-bottom: 40px;")
+        nav.navbar.navbar-expand-lg.navbar-light.bg-light
+            img.navbar-brand(src="images/logo.png",height="65px")
+            button.navbar-toggler(type="button",data-toggle="collapse",data-target="#navbarSupportedContent",aria-controls="navbarSupportedContent",aria-expanded="false",aria-label="Toggle navigation")
+                span.navbar-toggler-icon
+            
+            .collapse.navbar-collapse#navbarSupportedContent
+                ul.navbar-nav.mr-auto
+                    li.nav-item.active
+                        a.nav-link(href="dashboard") Anasayfa
+                            span.sr-only (current)
+                    li.nav-item.active
+                        a.nav-link(href="/") Çıkış Yap
+    
+    main.container
+        .jumbotron
+            h1 Anasayfa
+            p.lead 
+                p İsim : #{UserName} 
+                p Password : #{Password}
+                p IsAdmin : #{IsAdmin}
+                p CreatedAt : #{CreatedAt}

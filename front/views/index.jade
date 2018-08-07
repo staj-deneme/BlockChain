@@ -1,0 +1,38 @@
+extends layout
+
+block content
+    .loginbox
+        img(src="/images/logo.png")
+
+        form(action="#", method="post")
+            h4.login-title Giriş Yap
+
+            .form-group
+                label Kullanıcı Adı
+                input.form-control(type="text")
+            .form-group
+                label Şifre
+                input.form-control(type="text")
+            .form-group
+                input.btn.btn-primary.btn-block(type="submit",value="Giriş Yap")
+        a#register-btn.btn.btn-success.btn-block(href="javascript:void(0)") Kayıt Ol
+
+    .registerbox.flipped
+        img(src="/images/logo.png")
+
+        form(action="#", method="post")
+            h4.login-title Giriş Yap
+
+            .form-group
+                label Ad Soyad
+                input.form-control(type="text")
+            .form-group
+                label Kullanıcı Adı
+                input.form-control(type="text")
+            .form-group
+                label Şifre
+                input.form-control(type="text")
+            .form-group
+                input.btn.btn-primary.btn-block(type="submit",value="Kayıt Ol")
+        a#login-btn.btn.btn-success.btn-block(href="javascript:void(0)") Giriş Yap
+

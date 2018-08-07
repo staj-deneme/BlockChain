@@ -1,0 +1,50 @@
+
+body{
+    background: #e64444;
+}
+
+.loginbox{
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+	perspective: 600px;
+    max-width: 300px;
+    width: 100%;
+    background: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+    box-shadow: 2px 2px 20px 0px rgba(0,0,0,0.6);
+    padding: 15px 30px;
+    border-radius: 5px;
+    transition: 1s;
+}
+.login-title{
+    margin-bottom: 20px;
+    text-align: center;
+}
+.registerbox{
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+	perspective: 600px;
+    max-width: 300px;
+    width: 100%;
+    background: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+    box-shadow: 2px 2px 20px 0px rgba(0,0,0,0.6);
+    padding: 15px 30px;
+    border-radius: 5px;
+    transition: 1s;
+}
+
+.flipped{
+    transform: rotateY(180deg) translate(50%,-50%);
+}
+.nav-content{
+    margin: 40px auto;
+    max-width: 1000px;
+    width: 100%;
+}
